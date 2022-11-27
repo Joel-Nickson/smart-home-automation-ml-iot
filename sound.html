@@ -54,8 +54,8 @@
             // render the probability scores per class
             for (let i = 0; i < classLabels.length; i++) {
               const classPrediction =
-                classLabels[i] + ": " + result.scores[i].toFixed(2);
-              labelContainer.childNodes[i].innerHTML = classPrediction;
+                classLabels[i] + ": " + result.scores[1].toFixed(2);
+              labelContainer.childNodes[0].innerHTML = classPrediction;
             }
           },
           {
